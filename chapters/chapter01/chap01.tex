@@ -27,33 +27,30 @@ When offering a service or product, it is essential to understand what consumers
 
 \section{Online Feedback systems}
 \label{sec:OFS}
-This section will explain how online feedback systems work. In addition, will describe, categorize and point out the differences between the typical types of OFS used by the most successful online marketers (Ebay, Amazon, Yelp, TripAdvisor and Airbnb). 
+\subsection{Characteristics of most popular OFSs}
+\label{subsec:popularOFS}
 
-\subsection{Bias in the OFS}
-\label{subsec:bias}
-Explains the phenomenon of bias in the online feedback systems and also the different types of bias noticed in them. The subsection will end up to the bias that this research aims to reduce.
-
-\textit{Preliminary:} Many academic papers on online reputation systems and building trust in the online marketplace report the existence of bias on online reviews [1, 3, 4, 5, 6, 9], therefore reducing the bias of these systems is an important issue towards a more efficient online feedback system.
+This subsection will explain how online feedback systems work. In addition, it will describe, categorize and point out the differences between the typical types of OFS used by the most successful online marketers (Ebay, Amazon, Yelp, TripAdvisor and Airbnb). 
 
 \subsection{Methods for analyzing customer feedback}
 \label{subsec:feedbackmethods}
-This subsection will mention the methods how the customer feeback can be analyzed in order to get the most out of it. The ratings and the text reviews will be explicitely mentioned in order to create the right environment for jumping to the problem statement. 
+This subsection will mention the methods how the customer feeback can be analyzed in order to get the most out of it. The ratings and the text reviews will be explicitely mentioned in order to create the right environment for jumping to the problem statement.
+
+\subsection{Bias in the OFSs}
+\label{subsec:bias}
+Explains the phenomenon of bias in the online feedback systems and also the different types of bias noticed in them. The subsection will end up to the bias that this research aims to reduce.
+
+\textit{Preliminary:} Many academic papers on online reputation systems and building trust in the online marketplace report the existence of bias on online reviews [1, 3, 4, 5, 6, 9], therefore reducing the bias of these systems is an important issue towards a more efficient online feedback system. 
 
 \section{Problem statement}
 \label{sec:problemstatement}
 This section will clearly define the problem and the research question at the end.The first subsection focuses on the methods proposed to move toward a more efficient feedback system.
 
-\subsection{Toward a more efficient feedback system}
-\textit{Preliminary:} In 2008 the giant of online marketplaces eBay changed radically the way how their feedback system was working. Many researchers have analyzed the eBay changes \cite{fradkin2016bias,resnick2006value,bolton2013engineering,dini2009buying,dellarocas2008sound}, and findings suggest three ways to move toward a more efficient feedback system. A solution would be to mitigate to a new validated feedback system and follow it strictly. However abandoning the existing system and move to a new one requires a lot of effort and sometimes the model also does not fit considering the differences in the type of transactions. The second solution suggested is to build channels of feedback in a targeted way, for example only one side feedback or the element of anonymousness. The third solution learnt from the eBay case suggests using complementary methods for feedback analysis. This third solution offers in itself a lot of potential considering the big variety of tools for data analysis. This paper proposes text mining of reviews as a complementary method for feedback analysis in the reputation systems. The research will be focused on the reviews system of Airbnb. In the next section, I treat the current issues of Airbnb feedback system and afterwards introduce the proposed solution to be tested. The last section is an overview of the research planning.
+\subsection{Three ways to move toward a more efficient OFS}
+\textit{Preliminary:} In 2008 the giant of online marketplaces eBay changed radically the way how their feedback system was working. Many researchers have analyzed the eBay changes \cite{fradkin2016bias,resnick2006value,bolton2013engineering,dini2009buying,dellarocas2008sound}, and findings suggest three ways to move toward a more efficient feedback system. A solution would be to mitigate to a new validated feedback system and follow it strictly. However abandoning the existing system and move to a new one requires a lot of effort and sometimes the model also does not fit considering the differences in the type of transactions. The second solution suggested is to build channels of feedback in a targeted way, for example only one side feedback or the element of anonymousness. The third solution learnt from the eBay case suggests using complementary methods for feedback analysis. This third solution offers in itself a lot of potential considering the big variety of tools for data analysis. This paper proposes text mining of reviews as a complementary method for feedback analysis in the reputation systems. 
 
-\subsection{The Airbnb case}
-\textit{Preliminary:} Airbnb is a large online marketplace for accommodations, therefore reputation and trust is very important for the transactions on Airbnb. Before discussing the issues of the system, let’s take a look on how it works. The Airbnb feedback system is two sided, meaning that both guests and hosts have 14-30 days to review each other. The users are encouraged by email, login notifications or other forms of reminders to rate their experience and the feedbacks are revealed simultaneously when both the guest and the host have rated each other. The structure of feedback consist of three parts: firstly, the users is asked to give a general rating from 1-5 stars and a general comment, secondly the users rate six defined categories (Accuracy, Communication, Cleanliness, Location, Check in and Value) and the average ratings are published only after three reviews; and lastly the users are asked if they would recommend the listing or not.
-A recent research on this system implies that the system suffers from the bias on reviews \cite{fradkin2016bias}. In addition
-the research suggest that the bias on the system is caused mainly because of three reasons. First, ratings are
-the only data on feedback analysis of the system, meaning that text reviews are revealed for the public to
-read but they do not affect the overall rating of the listing. Second, based on the surveys of Airbnb itself,
-the non-reviewers tend to have worse experience than the reviewers and the third reason is the fact that the
-system does not offer an option for the feedback to remain anonymous as most of the users prefer.
+\subsection{Sentiment based opinion mining}
+This subsection will introduce the concept of sentiment mining and how it can be used for analysing the text of customer feedback in online feedback systems.
 
 \subsection{Research question}
 \textit{Preliminary:} Text reviews as part of the feedback in the online marketplace have a big importance for the users of
@@ -63,8 +60,3 @@ study of the Airbnb feedback systems argues that a negative rating is followed b
 which implies the great power of text mining for discovering the negative features of the listing. The methods for doing so fall into the category of sentiment based opinion mining methods. Examples of their application include mainly the movie rating systems (Netflix, IMDb) and the product rating systems (eBay).
 This research proposes the implementation of sentiment based opinion mining methods as complementary for the review analysis in the online feedback systems of the accommodation market, explicitly in the Airbnb feedback system.
 This research is based mostly on the question: “How can sentiment-based opinion mining methods complement the analysis of reviews in an online reputation system?” The research aims to test the methods which can effectively calculate the reputation scores of the text reviews and afterwards find the ways how these methods can be integrated with the current methods of feedback analysis. To be more precise, the Airbnb system calculates now the overall rating for a listing based on the average score of at least three reviews and this score has a proven bias (tend to be always positive). Given the fact that text reviews reveal often the negative aspects of the listing, generating a low score of feedback for them and calculating this score in the overall rating, will we reduce the bias? I believe that the answer is yes, however in order to have an answer for these questions the research is planned as described in the next section.
-
-
-
-
-%=========================================================
