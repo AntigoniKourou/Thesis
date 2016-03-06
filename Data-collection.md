@@ -6,6 +6,7 @@ The format of data for each of these listings is shown in the figure below. What
 * The ID of the review    **review_id**
 * Reviewer name and ID    **reviewer:host_name** and **reviewer:id**
 * The text data    **comments**
+* The number of reviews per listing **reviewData:metadata:reviews_count**
 
 ![](https://github.com/AntigoniKourou/Thesis/blob/master/logos/review_data_example.png)
 ![width=3cm]( https://github.com/AntigoniKourou/Thesis/blob/master/logos/actual_review.png)
