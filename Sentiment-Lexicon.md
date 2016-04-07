@@ -21,7 +21,7 @@ determine the sentiment orientation of a given adjective.
 * Semi-supervised learning (Esuti and Sebastiani, 2005)
 Use supervised learning. Given two seed sets: positive set P, negative set N. The two seed sets are then expanded using synonym and antonymy relations in an online dictionary to generate the expanded sets P' and N'. Using all the glosses in a dictionary for each term in P' U N' and converting them into a vector.
 - Build a binary classifier: Tried various learners.
-* Multiple runs 􀀃 of bootstrapping (Andreevskaia and Bergler, 2006) Basic bootstrapping with given seeds sets
+* Multiple runs of bootstrapping (Andreevskaia and Bergler, 2006) Basic bootstrapping with given seeds sets
 (adjectives)
 1. First pass: seed sets are expanded using synonym,
 antonyms, and hyponyms relations in WordNet.
@@ -32,3 +32,19 @@ adds these head words to the corresponding category
 (+ve, -ve, neutral)
 3. Third pass: clean up using a POS tagger to make sure
 the words are adjectives and remove contradictions.
+
+Each word is then assigned a fuzzy score
+reflecting the degree of certainty that the word is
+opinionated (+ve/-ve). The method performs multiple runs of
+bootstrapping using non-overlapping seed sets.  A net overlapping score for each word is computed based on how
+many times the word is discovered in the runs as +ve (or -ve) The score is normalized based on the fuzzy membership.
+
+**Which approach to use?**
+* Both corpus and dictionary based approaches
+are needed.
+* Dictionary usually does not give domain or
+context dependent meanings. Corpus is needed for that
+* Corpus-based approach is hard to find a very
+large set of opinion words. Dictionary is good for that
+* In practice, corpus, dictionary and manual
+approaches are all needed.
