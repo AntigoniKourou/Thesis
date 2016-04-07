@@ -10,3 +10,11 @@ The format of data for each of these listings is shown in the figure below. What
 
 ![](https://github.com/AntigoniKourou/Thesis/blob/master/logos/review_data_example.png)
 ![width=3cm]( https://github.com/AntigoniKourou/Thesis/blob/master/logos/actual_review.png)
+
+These opinions have to be structured into structured data as below. 
+(ej, ajk, soijkl, hi, tl),
+* **ej** - a target entity: Named Entity Extraction (more)
+* **ajk** - an aspect/feature of ej: Information Extraction
+* **soijkl** - is sentiment: Sentiment Identification
+* **hi** - is an opinion holder: Information/Data Extraction
+* **tl** - is the time: Information/Data Extraction
