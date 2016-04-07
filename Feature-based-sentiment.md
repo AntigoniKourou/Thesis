@@ -21,6 +21,13 @@ Extract aspects using double propagation DP (Qiu et al. 2009; 2011)
 * an opinion should have a target, entity or aspect.
 * DP extracts both aspects and opinion words.
 * Knowing one helps find the other.
+The DP method can also use dependency of opinions & aspects to extract new opinion words.
+Based on dependency relations
+* Knowing an aspect can find the opinion word that
+modifies it 
+* Knowing some opinion words can find more opinion
+words
+---> Jijkoun, Rijke and Weerkamp (2010) did similarly.
 
 The DP method
 * DP is a bootstrapping method
