@@ -1,4 +1,4 @@
-A survey published in 2015 based on 250 articles from all the online libraries such as IEEE, Springer, ACM etc takes an deep look into the state-of-art of Sentiment mining.
+A survey published in 2015 based on 250 articles from 15 different journals including Expert Systems with Applications, Decision Support Systems, Knowledge-based Systems, IEEE Intelligent Systems, EEE Transactions on Knowledge and Data Engineering, IEEE Transactions on Affective Computing, Information Sciences, Information Processing and Management, Computer Speech and Language, Communications of the ACM, Journal of Computer Science and Technology, Journal of Informetrics, Information Retrieval, Computer Speech and Language, Inf. Retrieval.
 
 ![](https://github.com/AntigoniKourou/Thesis/blob/f880391883171639979481aba028b0708feb072d/4842585vmjdqs/Organization_of_LR.png)
 
