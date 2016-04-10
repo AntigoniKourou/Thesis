@@ -1,11 +1,7 @@
-* PG. 4 @article{nandi2013survey,
-  title={A survey on using data mining techniques for online social network analysis},
-  author={Nandi, G and Das, A},
-  journal={Int. J. Comput. Sci. Issues (IJCSI)},
-  volume={10},
-  number={6},
-  pages={162--167},
-  year={2013}
-}
+A survey published in 2015 based on 250 articles from all the online libraries such as IEEE, Springer, ACM etc takes an deep look into the state-of-art of Sentiment mining.
 
-*
+![](https://github.com/AntigoniKourou/Thesis/blob/f880391883171639979481aba028b0708feb072d/4842585vmjdqs/Organization_of_LR.png)
+
+The review is organized as shown in the figure above. The distribution of articles covers sentiment analysis of different levels such as document level, word level , aspect level, sentence level, concept level, phrase level, link based, clause level and sense level. From this literature review I have chosen to analyze for my research 36 articles that are part of opinion word and aspects extraction and entity recognition as highlighted on the scheme of the figure above. The analysis includes a list of the publicly available datasets (based in their type). Moreover the literature review includes for each article the concepts and techniques utilized. 
+
+From the survey published in 2015 (cite) we can notice that most of work on sentiment mining is done in the period 2011-2015, with the highest number of publications in 2013. The survey also ranks the applied techniques of every research, concluding mostly in a utilization of SVM and Dictionary Based approaches in 55 and 41 articles correspondingly from a list of 243 articles.
