@@ -1,30 +1,5 @@
-%\title{University of Bristol Thesis Template}
-\RequirePackage[l2tabu]{nag}		% Warns for incorrect (obsolete) LaTeX usage
-%
-%
-% File: memoirthesis.tex
-% Author: Victor Brena
-% Description: Contains the thesis template using memoir class,
-% which is mainly based on book class but permits better control of 
-% chapter styles for example. This template is an adaptation and 
-% modification of Oscar's.
-% 
-% Memoir is a flexible class for typesetting poetry, fiction, 
-% non-fiction and mathematical works as books, reports, articles or
-% manuscripts. CTAN repository is found at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/memoir/
-%
-%
-% UoB guidelines for thesis presentation were found at:
-% http://www.bris.ac.uk/esu/pg/pgrcop11-12topic.pdf#page=49
-%
-% UoB guidelines:
-%
-% The dissertation must be printed on A4 white paper. Paper up to A3 may be used
-% for maps, plans, diagrams and illustrative material. Pages (apart from the
-% preliminary pages) should normally be double-sided.
-%
-% Memoir class loads useful packages by default (see manual).
+
+\RequirePackage[l2tabu]{nag}		
 \documentclass[a4paper,11pt,leqno,openbib]{memoir} 
 %add 'draft' to turn draft option on (see below)
 %
@@ -35,8 +10,8 @@
 \ifpdf
 \pdfinfo{
    /Author (Antigoni Kourou)
-   /Title (Toward a more efficient online feedback system: The Airbnb case)
-   /Keywords (Text reviews; Online Feedback System \@(OFB\@); sentiment mining; Text mining)
+   /Title (Feature-based opinion mining: A proposal to enhance accommodation search systems)
+   /Keywords (Online Feedback System \@(OFB\@); Sentiment mining; Information Retrieval)
    /CreationDate (D:\pdfdate)
 }
 \fi
@@ -376,14 +351,14 @@
 \import{chapters/related_work/}{chap02.tex}
 \clearemptydoublepage
 %
-\import{chapters/methodology/}{chap03.tex}
+\import{chapters/proposal/}{chap03.tex}
 \clearemptydoublepage
 %
 %
-\import{chapters/results/}{chap04.tex}
+\import{chapters/methodology/}{chap04.tex}
 \clearemptydoublepage
 %
-\import{chapters/evaluation/}{chap05.tex}
+\import{chapters/evaluation_results/}{chap05.tex}
 \clearemptydoublepage
 %
 \import{chapters/discussion/}{chap06.tex}
