@@ -9,7 +9,7 @@ def lemmatizer(item):
 # Get the tokens of each sentence
 		mysentencetokens = tknzr.tokenize(item)
 		
-#Lemmatize the tokenized sentences
+# Lemmatize the tokenized sentences
 		looper = 0
 		for token in mysentencetokens:
 			mysentencetokens[looper] = lmtzr.lemmatize(token)
