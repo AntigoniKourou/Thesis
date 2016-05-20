@@ -7,16 +7,12 @@
 \chapter{Methodology}
 \label{chap:methods}
 
-\initial{H}ere will go the methodology used for the research. First, I will explain the Airbnb case, including: why there is a bias in this system, how does the rating works and how will I do the research using their data. 
+\initial{I}n order to build the proposed solution, this research is based on two sources of data: text reviews and ontology. The next section aim to describe the methodology used for data collection and building the accommodation ontology. (+ pipeline coding?)
 
-\textit{Preliminary only:} Airbnb is a large online marketplace for accommodations, therefore reputation and trust is very important for the transactions on Airbnb. Before discussing the issues of the system, let’s take a look on how it works. The Airbnb feedback system is two sided, meaning that both guests and hosts have 14-30 days to review each other. The users are encouraged by email, login notifications or other forms of reminders to rate their experience and the feedbacks are revealed simultaneously when both the guest and the host have rated each other. The structure of feedback consist of three parts: firstly, the users is asked to give a general rating from 1-5 stars and a general comment, secondly the users rate six defined categories (Accuracy, Communication, Cleanliness, Location, Check in and Value) and the average ratings are published only after three reviews; and lastly the users are asked if they would recommend the listing or not. A recent research on this system implies that the system suffers from the bias on reviews \cite{fradkin2016bias}. In addition the research suggest that the bias on the system is caused mainly because of three reasons. First, ratings are the only data on feedback analysis of the system, meaning that text reviews are revealed for the public to read but they do not affect the overall rating of the listing. Second, based on the surveys of Airbnb itself, the non-reviewers tend to have worse experience than the reviewers and the third reason is the fact that the system does not offer an option for the feedback to remain anonymous as most of the users prefer.
-\section{Accommodation ontology}
-Will describe how I created my own ontology for this research.
+\section{Accommodation ontology} 
+In knowledge management and Semantic Web research areas, ontologies are considered essential in order to describe various concepts and relationships between them. Ontologies are formal specifications of a shared conceptualization of a domain. For the accommodation domain and related domains a few ontologies have been proposed, which cover different aspects in this domain. However these ontologies are often found as sub-ontologies of the e-tourism domain. In this research, the ontology of accommodation is based on several sources. Firstly HONTOLOGY \cite{chaves2012hontology}, which is brought in alignment with Accommodation in QALL-ME, Tourist Accommodationsin DBpedia.org and Lodging Business  in Schema.org, was initially created by following different scenarios of booking an accommodation and processing reviews in Web services. Secondly ACCO Accommodation Ontology \cite{hepp2013accommodation}, which is an extension of GoodRelations ontology \cite{hepp2008goodrelations}, is based on Owl Ontology Language (OWL) and is supported by Google and Yahoo for the e-commerce accommodation offers.
+Besides these ontologies,  further covers features mentioned in the Web based accommodation services of AirBnb.com, Booking.com and TripAdvisor.com.
+
 
 \section{Data collection}
 This subsection will describe the characteristics of data that will be used for research. In details how each property of the data scraped will be used, name of databases and so on.
-\section{Data pre-processing}
-This subsection will explain how the data will be cleaned up. Here important to mention is: The use of only english text (how will be filtered), how will deal with negation, how will deal with bad english etc. IMPORTANT PART (the unsolved problems need to be mentioned in the limitations.)
-
-\section{Data analysis}
-Here the chosen algorithm will be described step by step. 
