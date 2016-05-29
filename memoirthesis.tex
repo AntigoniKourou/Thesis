@@ -1,6 +1,6 @@
 
-\RequirePackage[l2tabu]{nag}		
-\documentclass[a4paper,11pt,leqno,openbib]{memoir} 
+\RequirePackage[l2tabu]{nag}
+\documentclass[a4paper,11pt,leqno,openany]{memoir} 
 %add 'draft' to turn draft option on (see below)
 %
 %
@@ -319,9 +319,12 @@
 %
 \include{frontmatter/title}
 \clearemptydoublepage
+\let\cleardoublepage\clearpage
 %
+\let\cleardoublepage\clearpage
 \include{frontmatter/dedication}
 \clearemptydoublepage
+
 %
 \include{frontmatter/declaration}
 \clearemptydoublepage
@@ -335,9 +338,6 @@
 \addtocontents{toc}{\par\nobreak \mbox{}\hfill{\bf Page}\par\nobreak}
 \clearemptydoublepage
 %
-\listoftables
-\addtocontents{lot}{\par\nobreak\textbf{{\scshape Table} \hfill Page}\par\nobreak}
-\clearemptydoublepage
 %
 \listoffigures
 \addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
