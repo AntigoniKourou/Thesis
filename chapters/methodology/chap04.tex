@@ -7,14 +7,18 @@
 \chapter{Methodology}
 \label{chap:methods}
 
-\initial{I}n order to build the proposed solution, this research is based on two sources of data: text reviews and ontology. The next section aim to describe the methodology used for data collection and building the accommodation ontology. (+ pipeline coding?)
-
+ \initial{T}he proposed pipeline for opinion mining and extracting features from text feedback is written in Python 2.7. In addition to basic packages, I have made use of NLTK 3.2.1, py2neo, vaderSentiment, ipython, jupyter, langdetect, pandas, matlab etc. All the codes belonging to the four phases of the pipeline, including data analysis and visualization can be found in Appendix (add number). Besides what is already explained in the proposed approach chapter, the next section describes two main data sources used in the pipeline: the dataset from Airbnb and the accommodation ontology.
+ %
+ %
+\section{Dataset}
+%
+% HOW IS ARE THE REVIEWS RETRIEVED FROM AIRBNB
+% FORMAT, CODE, TIME ...
+%
+The algorithm deals with a huge set of reviews, which are retrieved from the feedback system of Airbnb and they serve as the input of the pipeline. The whole corpus of reviews consists of 3.4GB, including reviews of the listings from the Netherlands and United Kingdom. This corpus is then filtered to be focused only in the data of Amsterdam, for simplicity purposes. The same code can run in the bigger corpus, with the help of a more powerful machine. The data set is stored in cloud, in the Neo4J graph database, where the nodes can represent a listing (accommodation offer), a guest/host, a review or a response. 
+%
+%
 \section{Accommodation ontology} 
 In knowledge management and Semantic Web research areas, ontologies are considered essential in order to describe various concepts and relationships between them. Ontologies are formal specifications of a shared conceptualization of a domain. For the accommodation domain and related domains a few ontologies have been proposed, which cover different aspects in this domain. However these ontologies are often found as sub-ontologies of the e-tourism domain. In this research, the ontology of accommodation is based on several sources. Firstly HONTOLOGY \cite{chaves2012hontology}, which is brought in alignment with Accommodation in QALL-ME, Tourist Accommodationsin DBpedia.org and Lodging Business  in Schema.org, was initially created by following different scenarios of booking an accommodation and processing reviews in Web services. Secondly ACCO Accommodation Ontology \cite{hepp2013accommodation}, which is an extension of GoodRelations ontology \cite{hepp2008goodrelations}, is based on Owl Ontology Language (OWL) and is supported by Google and Yahoo for the e-commerce accommodation offers.
 Besides these ontologies,  further covers features mentioned in the Web based accommodation services of AirBnb.com, Booking.com and TripAdvisor.com.
 
-
-\section{Dataset}
-This subsection will describe the characteristics of data that will be used for research. In details how each property of the data scraped will be used, name of databases and so on.
-
-The algorithm deals with a huge set of reviews, which are retrieved from the feedback system of Airbnb and they serve as the input of the pipeline. The whole corpus of reviews consists of 3.4GB, including reviews of the listings from the Netherlands, which is filtered to be focused only in Amsterdam. The data set is stored in cloud, in the Neo4J graph database, where the nodes can represent a listing, a guest or host, review or response. (Appendix figure?)

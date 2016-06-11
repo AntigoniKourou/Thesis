@@ -21,7 +21,7 @@
 % When draft option is on. 
 \ifdraftdoc 
 	\usepackage{draftwatermark}				%Sets watermarks up.
-	\SetWatermarkScale{0.3}
+	\SetWatermarkScale{0.2}
 	\SetWatermarkText{\bf Draft: \today}
 \fi
 %
@@ -67,7 +67,7 @@
 \newlength\dlf@normtxtw 
 \setlength\dlf@normtxtw{\textwidth} 
 \newsavebox{\feline@chapter} 
-\newcommand\feline@chapter@marker[1][4cm]{%
+\newcommand\feline@chapter@marker[1][2cm]{%
 	\sbox\feline@chapter{% 
 		\resizebox{!}{#1}{\fboxsep=1pt%
 			\colorbox{gray}{\color{white}\thechapter}% 
@@ -87,8 +87,7 @@
 	\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so} 
 	\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape} 
 	\renewcommand\chapternamenum{} \renewcommand\printchaptername{} 
-	\renewcommand\printchapternum{\null\hfill\feline@chm[2.5cm]\par} 
-	\renewcommand\afterchapternum{\par\vskip\midchapskip} 
+	\renewcommand\printchapternum{\null\hfill\feline@chm[3.5cm]\par} 
 	\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft ##1\par}
 } 
 \makeatother 
@@ -109,7 +108,7 @@
 % Oscar's command (it works):
 % Fills blank pages until next odd-numbered page. Used to emulate single-sided
 % frontmatter. This will work for title, abstract and declaration. Though the
-% contents sections will each start on an odd-numbered page they will
+% contents s will each start on an odd-numbered page they will
 % spill over onto the even-numbered pages if extending beyond one page
 % (hopefully, this is ok).
 \newcommand{\clearemptydoublepage}{\newpage{\thispagestyle{empty}\cleardoublepage}}
@@ -364,13 +363,13 @@
 \import{chapters/evaluation_results/}{chap05.tex}
 \clearemptydoublepage
 %
+\import{chapters/results/}{chap08.tex}
+\cleardoublepage
+%
 \import{chapters/discussion/}{chap06.tex}
 \cleardoublepage
 \import{chapters/conclusions/}{chap07.tex}
-% And the appendix goes here
-\appendix
-\import{chapters/appendices/}{app0A.tex}
-\clearemptydoublepage
+
 %
 % Apparently the guidelines don't say anything about citations or
 % bibliography styles so I guess we can use anything.
@@ -378,6 +377,11 @@
 \bibliographystyle{siam}
 \refstepcounter{chapter}
 \bibliography{thesisbiblio}
+\clearemptydoublepage
+
+% And the appendix goes here
+\appendix
+\import{chapters/appendices/}{app0A.tex}
 \clearemptydoublepage
 %
 % Add index
