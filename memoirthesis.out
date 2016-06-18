@@ -17,9 +17,21 @@
 \BOOKMARK [1][-]{section.5.1}{Evaluation of VADER algorithm}{chapter.5}% 17
 \BOOKMARK [1][-]{section.5.2}{Evaluation of feature identification}{chapter.5}% 18
 \BOOKMARK [0][-]{chapter.6}{Results}{}% 19
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 20
-\BOOKMARK [1][-]{section.7.1}{Limitations}{chapter.7}% 21
-\BOOKMARK [1][-]{section.7.2}{Implications}{chapter.7}% 22
-\BOOKMARK [1][-]{section.7.3}{Future work}{chapter.7}% 23
-\BOOKMARK [0][-]{chapter.8}{Conclusions}{}% 24
-\BOOKMARK [0][-]{appendix*.38}{Appendix A}{}% 25
+\BOOKMARK [1][-]{section.6.1}{Overview of sentiment scores}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.2}{The case of sentences with "no sentiment"}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.3}{Most mentioned features}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.4}{The trade-off between sentiment and number of reviews}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.5}{Pipeline results compared to Airbnb stars}{chapter.6}% 24
+\BOOKMARK [2][-]{subsection.6.5.1}{Overall stars per listing}{section.6.5}% 25
+\BOOKMARK [2][-]{subsection.6.5.2}{Stars of features per listing}{section.6.5}% 26
+\BOOKMARK [1][-]{section.6.6}{Conditional analysis on the number of reviews}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.7}{Reducing the bias of Airbnb system}{chapter.6}% 28
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 29
+\BOOKMARK [1][-]{section.7.1}{Major findings}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.2}{Practical implications}{chapter.7}% 31
+\BOOKMARK [2][-]{subsection.7.2.1}{Implications for service providers}{section.7.2}% 32
+\BOOKMARK [2][-]{subsection.7.2.2}{Implications for BI}{section.7.2}% 33
+\BOOKMARK [2][-]{subsection.7.2.3}{Implication for customers}{section.7.2}% 34
+\BOOKMARK [2][-]{subsection.7.2.4}{Other implications}{section.7.2}% 35
+\BOOKMARK [1][-]{section.7.3}{Limitations and future research}{chapter.7}% 36
+\BOOKMARK [0][-]{appendix*.38}{Appendix A}{}% 37

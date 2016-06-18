@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{Abstract}{iii}{chapter*.3}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{List of Figures}{v}{section*.6}
+\contentsline {chapter}{List of Figures}{vi}{section*.6}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem statement}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Research question}{3}{section.1.2}
@@ -9,19 +9,31 @@
 \contentsline {chapter}{\chapternumberline {2}Current state of knowledge}{6}{chapter.2}
 \contentsline {chapter}{\chapternumberline {3}The proposed approach}{10}{chapter.3}
 \contentsline {section}{\numberline {3.1}Pre-processing}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Feature identification}{12}{section.3.2}
+\contentsline {section}{\numberline {3.2}Feature identification}{11}{section.3.2}
 \contentsline {section}{\numberline {3.3}Sentiment detection}{12}{section.3.3}
 \contentsline {section}{\numberline {3.4}Data analysis}{13}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Methodology}{16}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dataset}{16}{section.4.1}
-\contentsline {section}{\numberline {4.2}Accommodation ontology}{17}{section.4.2}
-\contentsline {chapter}{\chapternumberline {5}Evaluation}{18}{chapter.5}
-\contentsline {section}{\numberline {5.1}Evaluation of VADER algorithm}{18}{section.5.1}
-\contentsline {section}{\numberline {5.2}Evaluation of feature identification}{19}{section.5.2}
-\contentsline {chapter}{\chapternumberline {6}Results}{21}{chapter.6}
+\contentsline {chapter}{\chapternumberline {4}Methodology}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dataset}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Accommodation ontology}{16}{section.4.2}
+\contentsline {chapter}{\chapternumberline {5}Evaluation}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Evaluation of VADER algorithm}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Evaluation of feature identification}{18}{section.5.2}
+\contentsline {chapter}{\chapternumberline {6}Results}{20}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview of sentiment scores}{20}{section.6.1}
+\contentsline {section}{\numberline {6.2}The case of sentences with "no sentiment"}{21}{section.6.2}
+\contentsline {section}{\numberline {6.3}Most mentioned features}{21}{section.6.3}
+\contentsline {section}{\numberline {6.4}The trade-off between sentiment and number of reviews}{22}{section.6.4}
+\contentsline {section}{\numberline {6.5}Pipeline results compared to Airbnb stars}{22}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Overall stars per listing}{22}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Stars of features per listing}{24}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Conditional analysis on the number of reviews}{24}{section.6.6}
+\contentsline {section}{\numberline {6.7}Reducing the bias of Airbnb system}{25}{section.6.7}
 \contentsline {chapter}{\chapternumberline {7}Discussion}{26}{chapter.7}
-\contentsline {section}{\numberline {7.1}Limitations}{26}{section.7.1}
-\contentsline {section}{\numberline {7.2}Implications}{26}{section.7.2}
-\contentsline {section}{\numberline {7.3}Future work}{27}{section.7.3}
-\contentsline {chapter}{\chapternumberline {8}Conclusions}{28}{chapter.8}
+\contentsline {section}{\numberline {7.1}Major findings}{26}{section.7.1}
+\contentsline {section}{\numberline {7.2}Practical implications}{27}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Implications for service providers}{27}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Implications for BI}{27}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Implication for customers}{27}{subsection.7.2.3}
+\contentsline {subsection}{\numberline {7.2.4}Other implications}{27}{subsection.7.2.4}
+\contentsline {section}{\numberline {7.3}Limitations and future research}{27}{section.7.3}
 \contentsline {chapter}{Appendix A}{29}{appendix*.38}
