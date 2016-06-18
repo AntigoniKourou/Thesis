@@ -1,0 +1,23 @@
+\select@language {english}
+\addvspace {10pt}
+\par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
+\addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Customer Focus Theory}}{4}{figure.1.1}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The proposed approach}}{11}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of the probabilistic sentiment results}}{14}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of data analysis in Jupyter Notebook with IPython \& Pandas Library}}{15}{figure.3.3}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Distribution of VADER and humans' sentiment scores}}{19}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Precision/Recall matrix for feature identification}}{20}{figure.5.2}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Sentiment scores of each sentence of reviews in the dataset}}{21}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Percentage of sentences, reviews and listings where the features are mentioned}}{22}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Features mentioned in review level per each listing and their sentiment}}{23}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Comparison of overall and features rating distribution}}{24}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Features rating distribution detailed}}{24}{figure.6.5}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
