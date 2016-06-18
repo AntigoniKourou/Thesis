@@ -18,6 +18,21 @@
 The algorithm deals with a huge set of reviews, which are retrieved from the feedback system of Airbnb and they serve as the input of the pipeline. The whole corpus of reviews consists of 3.4GB, including reviews of the listings from the Netherlands and United Kingdom. This corpus is then filtered to be focused only in the data of Amsterdam, for simplicity purposes. The same code can run in the bigger corpus, with the help of a more powerful machine. The data set is stored in cloud, in the Neo4J graph database, where the nodes can represent a listing (accommodation offer), a guest/host, a review or a response. 
 %
 %
+The average sentiment scores are calculated per review, grouped by \textit{Review ID}, and then the average score per listing, based on \textit{Listing ID}. These scores are then transformed into star ratings, following the coding scheme:
+
+\tiny
+\begin{lstlisting}[language=python]
+	if (Sentiment < -0.75):	stars = 1
+  			elif (-0.75 <= Sentiment < -0.5): stars = 1.5
+    			elif (-0.5 <= Sentiment < -0.25): stars = 2
+    				elif (-0.25 <= Sentiment < 0.0): stars = 2.5
+            				elif (Sentiment==0.0): stars = 3
+    		elif (0.0 < Sentiment < 0.25): stars = 3.5
+    			elif (0.25 <= Sentiment < 0.5): stars = 4
+    				elif (0.5 <= Sentiment < 0.75): stars = 4.5
+    					elif (0.75 <= Sentiment): stars = 5
+\end{lstlisting}
+\normalsize
 \section{Accommodation ontology} 
 In knowledge management and Semantic Web research areas, ontologies are considered essential in order to describe various concepts and relationships between them. Ontologies are formal specifications of a shared conceptualization of a domain. For the accommodation domain and related domains a few ontologies have been proposed, which cover different aspects in this domain. However these ontologies are often found as sub-ontologies of the e-tourism domain. In this research, the ontology of accommodation is based on several sources. Firstly HONTOLOGY \cite{chaves2012hontology}, which is brought in alignment with Accommodation in QALL-ME, Tourist Accommodationsin DBpedia.org and Lodging Business  in Schema.org, was initially created by following different scenarios of booking an accommodation and processing reviews in Web services. Secondly ACCO Accommodation Ontology \cite{hepp2013accommodation}, which is an extension of GoodRelations ontology \cite{hepp2008goodrelations}, is based on Owl Ontology Language (OWL) and is supported by Google and Yahoo for the e-commerce accommodation offers.
 Besides these ontologies,  further covers features mentioned in the Web based accommodation services of AirBnb.com, Booking.com and TripAdvisor.com.

@@ -7,41 +7,37 @@
 \chapter{Discussion}
 \label{chap:dis}
 %\initial{H}
-Here will go the discussion.
+\section{Major findings}
+--- The conclusions belong here, still incomplete ----
+
+Getting hidden insights about features hidden in free text is an important step towards better customer feedback analysis. The proposed approach gives a sentiment score for every sentence in the reviews of Airbnb and then assigns these scores to the features identified in those sentences. This work is most similar to \cite{eirinaki2012feature,ali2015type,penalver2014feature} in the concepts discussed in the second chapter, however mining the text for quantitative analysis purposes is a novel approach. The pipeline the 78.7\% accuracy in sentiment detection and 77.8\% in feature extraction. These values are quite comparable with the similar systems examined. However, for explaining possible downfalls and limitation of the proposed approach, the following subsection will describe the limitation and future work to be done for improving the pipeline and it will be followed by the practical implications of this work. 
+
+Some other insights are drawn from the analysis of the sentiment scores and features extracted, which are similar to the analysis of quantitative data as we deal only with discrete sentiment scores. These results show the alignment between the quantitative data of Airbnb and the output of the pipeline. We showed that the text feedback can reveal hidden knowledge which can not be obtained only by analyzing the ratings in the feedback system. In addition, the results of this analysis showed to be reliable in the overall ratings as compared to Airbnb. In feature level it is necessary that we condition the number of reviews, where the feature is mentioned in order to retrieve reliable results, as it affects directly the generated ratings. In 83.5\% of the listings we can find features mentioned in more than three reviews, in 24.3\% of them all the six features are mentioned each in more than 3 reviews and in 16.5\% of total listings don't have enough reviews to generate reliable scores for any of the features. The analysis included both customer and business perspective therefore it is seen as an interesting aspect to explore further than this research. 
+
 \begin{itemize}
 \item  How my work is similar to others and where it differs
 \item Recap of the results and their weakness
 \item Recap of evaluation
 \end{itemize}
 
-\section{Limitations}
+\section{Practical implications}
+\subsection{Implications for service providers}
+\subsection{Implications for BI}
+\subsection{Implication for customers}
+\subsection{Other implications}
 
 \begin{itemize}
-\item Language only english
-\item  Could have used more algorithms and compare them
-\item More people for evaluation
-\item Accommodation ontology and query search n-gram
+\item  Know you customer better - what he always mentions, likes, dislikes...
+\item Better analysis on features - what to work on, what shall be explicitly mentioned 
+\item For Airbnb where to invest more, how the prices differ (for example lets say that people say that \textit{value} is too high they are good indicators for decreasing the price
+\item Comparison analysis that give the importance of text as it deserves it. The issue of bias and other related issues can be studied with the help of text mining
 \item 
 \end{itemize}
 
+\section{Limitations and future research}
+This study has several limitation, which create room for further research. Due to the time-frame this research is based only in six accommodation features that are mentioned in the Airbnb website. In order for the study to be complete every feature of the accommodation ontology will have to be treated. This step would give meaning to all the sentences of reviews by clustering them into one or more features and would decrease the phenomenon of having too many sentences with un-identified objects. Secondly, this research groups all the accommodation features in the same family root without making a distinction between explicit and implicit features. The last ones are more difficult to process in NLP, however different academics have taken steps in this direction. A N-gram approach is very important to be tested and it is believed to improve the performance of the pipeline for feature identification. For example in phrases like \textit{"The room was \textbf{as in} the \textbf{pictures"}} is a potential 3-gram phrase which refers to \textit{accuracy}. Thirdly, for sentiment detection the paper discusses the use of VADER, however several algorithms (i.e. SO-CAL, SenticNet, Pattern)  can be trained in the corpus for performance comparison purposes. 
 
 
+In addition, the evaluation of the pipeline requires higher values for TP/FP which affects the reliability of the precision and recall measurement. Thus, the evaluation will have to be improved either by increasing the number of features identified as discussed above or by increasing the number of sentences in the evaluation set, so we will have more cases to evaluate. Lastly, the pipeline ignores all the reviews in languages other than English. In the Amsterdam's dataset, around 17\% of the whole reviews ignored, meaning that from 30.2 reviews in average per listing, 5.1 reviews in average will be ignored. The ignored reviews are written mostly in Dutch, but also other languages. This percentage is expected to increase in cities other than Amsterdam. Therefore, the pipeline has to be trained for languages other than English, such as Dutch, French, Spanish and German, which correspond with the countries of biggest Airbnb impact in Europe. For doing so, the accommodation ontology has to be adjusted to these languages and secondly the sentiment detector must support those languages. Considering that most of sentiment detectors are based only on English lexicon, it is difficult to develop this pipeline in different languages as a coming step to be taken. However what could help is the translation of reviews of any other language to English after it is read from the cloud database. For this matter, a good translator is the key to the successful integration. 
 
-\section{Implications}
-
-The main contribution of this work is threefold. First, an ontology-
-based feature identification permits the reuse of existing
-vocabularies and ontologies in order to extract feature related
-information from opinions in different domains. Second, four different
-configurable methods for feature polarity identification are
-proposed. These methods can be configured with different parameters
-to obtain the best polarity identification approach for different
-domains and languages. Finally, the vector analysis based
-opinion mining approach permits the sentiment classification of
-a document to be calculated, and no training phases are necessary.
-\section{Future work}
-\begin{itemize}
-\item  The beginning of a recommendation system
-\item Extend the algorithm to n-grams
-\item 
-\end{itemize}
+% -----------------------------------------------------------
