@@ -17,7 +17,7 @@ Based on these results, the chosen sample to represent the human ratings are the
 
 \section{Evaluation of VADER algorithm}
 
-To check the performance of VADER in the dataset, first the mean scores of the three respondents per each sentence are calculated. These mean scores represent the actual rating values, thus VADER scores would  be the predicted values.  For measuring the differences between them, the chosen method is Root Mean Square Error (RMSE). The RMSE represents the sample standard deviation of the differences between predicted values and actual values. These individual differences are called prediction errors. The formula used for its estimation is:
+To check the performance of VADER in the dataset, first the mean scores of the three respondents per each sentence are calculated. These mean scores represent the actual rating values, thus VADER scores would  be the predicted values.  For measuring the differences between them, the chosen method is Root Mean Square Error (RMSE). \todo{I use the RMSE now but I am not sure if it gives the idea that the samples are similar.} The RMSE represents the sample standard deviation of the differences between predicted values and actual values. These individual differences are called prediction errors. The formula used for its estimation is:
 \begin{equation}
  RMSE = \sqrt {{\frac{{\sum\limits_{{i = 1}}^{100} {{{\left( {{y_\textsubscript{i (Humans)}} - {{\hat{y}}_\textsubscript{i (VADER)}}} \right)}^2}} }}{{100}}}}
  \label{RMSE}
@@ -34,7 +34,7 @@ The differences between VADER scores and human ratings result in 60\% of cases w
 
 \section{Evaluation of feature identification}
 The effectiveness of the proposed technique for feature identification is measured by using precision, recall and accuracy as suggested by \cite{huang2006performance}.
-The existence of a feature in a sentence is true when it is identified by the majority of respondents. Therefore for each feature, TP (true positives) is the number of sentences that the algorithm correctly identifies the feature, FP (false positives) is the number of sentences that the algorithm falsely identifies the feature; FN (false negatives) is the number of sentences that the algorithm fails to identify it and TN (true negatives) is the number of sentences that the algorithm correctly doesn't identify the feature. The formulas for calucating the precision, recall and accuracy of each feature are:
+The existence of a feature in a sentence is true when it is identified by the majority of respondents. Therefore for each \todo{changed the whole explanation here as suggested} feature, TP (true positives) is the number of sentences that the algorithm correctly identifies the feature, FP (false positives) is the number of sentences that the algorithm falsely identifies the feature; FN (false negatives) is the number of sentences that the algorithm fails to identify it and TN (true negatives) is the number of sentences that the algorithm correctly doesn't identify the feature. The formulas for calucating the precision, recall and accuracy of each feature are:
 \begin{align}
 Precision  (p) =\frac{TP}{TP+FP} \hspace{1cm}
 Recall  (r) = \frac{TP}{TP + FN} \hspace{1cm}
