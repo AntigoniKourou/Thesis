@@ -115,9 +115,11 @@ The differences more than 1 stars are treated as isolated cases and they consist
 	\label{fig:6.5}
 \end{figure}
 
-For measuring the differences between values predicted by the pipeline and the  actual Airbnb values, the chosen method is Root Mean Square Error (RMSE). The RMSE represents the sample standard deviation of the differences between predicted values and observed values. These individual differences are called residuals or prediction errors and they are represented by the difference in Airbnb stars and the pipeline. The formula used for its estimation is:
-
-$$ RMSE = \sqrt {{\frac{{\sum\limits_{{i = 1}}^n {{{\left( {{y_\textsubscript{i (Airbnb)}} - {{\hat{y}}_\textsubscript{i (Pipeline)}}} \right)}^2}} }}{{n}}}}$$
+For measuring the differences between values predicted by the pipeline and the  actual Airbnb values, the chosen method is Root Mean Square Error (RMSE), which is explained earlier. For its estimation the Formula 5.1 is adapted to:
+\begin{equation}
+RMSE = \sqrt {{\frac{{\sum\limits_{{i = 1}}^n {{{\left( {{y_\textsubscript{i (Airbnb)}} - {{\hat{y}}_\textsubscript{i (Pipeline)}}} \right)}^2}} }}{{n}}}}
+\label{RSMEresults}
+\end{equation}
 For the overall ratings, the RSME is 0.675 which means that a certain bias exists between the two samples. 
 %
 %
