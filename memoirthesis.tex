@@ -1,8 +1,6 @@
+
 \RequirePackage[l2tabu]{nag}
 \documentclass[a4paper,11pt,leqno,openany]{memoir} 
-
-\usepackage[colorinlistoftodos]{todonotes}% handig voor commentaar: gebruik \todo{}, zie ftp://ftp.fu-berlin.de/tex/CTAN/macros/latex/contrib/todonotes/todonotes.pdf
-
 %add 'draft' to turn draft option on (see below)
 %
 %
@@ -10,7 +8,7 @@
 \usepackage{datetime}
 \usepackage{listings}
 \usepackage{ifpdf}
-\usepackage{color}
+\usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{lipsum}
@@ -170,7 +168,6 @@
 \usepackage{microtype}					%Makes pdf look better.
 \usepackage{rotfloat}					%For rotating and float environments as tables, 
 									%figures, etc. 
-\usepackage{multirow}
 \usepackage{alltt}						%LaTeX commands are not disabled in 
 									%verbatim-like environment
 \usepackage[version=0.96]{pgf}			%PGF/TikZ is a tandem of languages for producing vector graphics from a 
@@ -357,6 +354,7 @@
 %
 \import{chapters/related_work/}{chap02.tex}
 \clearemptydoublepage
+%
 %
 %
 \import{chapters/methodology/}{chap04.tex}

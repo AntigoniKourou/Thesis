@@ -33,4 +33,4 @@
 \contentsline {section}{\numberline {7.1}Major findings}{29}{section.7.1}
 \contentsline {section}{\numberline {7.2}Practical implications}{30}{section.7.2}
 \contentsline {section}{\numberline {7.3}Limitations and future research}{30}{section.7.3}
-\contentsline {chapter}{Appendix A}{32}{appendix*.7}
+\contentsline {chapter}{Appendix A}{32}{appendix*.5}
