@@ -170,6 +170,7 @@
 \usepackage{microtype}					%Makes pdf look better.
 \usepackage{rotfloat}					%For rotating and float environments as tables, 
 									%figures, etc. 
+\usepackage{multirow}
 \usepackage{alltt}						%LaTeX commands are not disabled in 
 									%verbatim-like environment
 \usepackage[version=0.96]{pgf}			%PGF/TikZ is a tandem of languages for producing vector graphics from a 
@@ -357,12 +358,12 @@
 \import{chapters/related_work/}{chap02.tex}
 \clearemptydoublepage
 %
-\import{chapters/proposal/}{chap03.tex}
-\clearemptydoublepage
-%
 %
 \import{chapters/methodology/}{chap04.tex}
 \clearemptydoublepage
+%
+\import{chapters/proposal/}{chap03.tex}
+\cleardoublepage
 %
 \import{chapters/evaluation_results/}{chap05.tex}
 \clearemptydoublepage

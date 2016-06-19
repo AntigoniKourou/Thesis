@@ -5,10 +5,10 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Customer Focus Theory}}{4}{figure.1.1}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The proposed approach}}{11}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Example of the probabilistic sentiment results}}{14}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Example of data analysis in Jupyter Notebook with IPython \& Pandas Library}}{15}{figure.3.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Example of the accommodation ontology}}{11}{figure.3.1}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The proposed approach}}{13}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Example of the probabilistic sentiment results}}{16}{figure.4.2}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Distribution of VADER and humans' sentiment scores}}{19}{figure.5.1}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Precision/Recall matrix for feature identification}}{20}{figure.5.2}
