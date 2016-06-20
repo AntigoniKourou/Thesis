@@ -17,9 +17,9 @@ Based on these results, the chosen sample to represent the human ratings are the
 
 \section{Evaluation of VADER algorithm}
 
-To check the performance of VADER in the dataset, first the mean scores of the three respondents per each sentence are calculated. These mean scores represent the actual rating values, thus VADER scores would  be the predicted values.  For measuring the differences between them, the chosen method is Root Mean Square Error (RMSE). \todo{I use the RMSE now but I am not sure if it gives the idea that the samples are similar.} The RMSE represents the sample standard deviation of the differences between predicted values and actual values. These individual differences are called prediction errors. The formula used for its estimation is:
+To check the performance of VADER in the dataset, first the mean scores of the three respondents per each sentence are calculated. These mean scores represent the actual rating values, thus VADER scores would  be the predicted values.  For measuring the differences between them, the chosen method is Root Mean Square Error (RMSE).
 \begin{equation}
- RMSE = \sqrt {{\frac{{\sum\limits_{{i = 1}}^{100} {{{\left( {{y_\textsubscript{i (Humans)}} - {{\hat{y}}_\textsubscript{i (VADER)}}} \right)}^2}} }}{{100}}}}
+ RMSE \equiv^{def} \sqrt {{\frac{{\sum\limits_{{i = 1}}^{100} {{{\left( {{y_\textsubscript{i (Humans)}} - {{\hat{y}}_\textsubscript{i (VADER)}}} \right)}^2}} }}{{100}}}}
  \label{RMSE}
 \end{equation}
 The RMSE between the two samples results to be 0.487, meaning that the VADER is not the perfect predictor of human ratings but considering that the Standard Error of Mean (SEM) in differences is 0.0489, we can conclude that there is no tendency of VADER to under-estimate or over-estimate the human ratings. From Figure \ref{fig:distribution} can be noticed that the two datasets share the same mean (4.125 compared to 4.13), the same median and mode (both equal to 4.5) and have similar standard deviations. 
