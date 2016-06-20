@@ -24,21 +24,21 @@ The pipeline reads the text data from cloud with the help of \textit{py2neo 2.0.
 	\caption{The proposed approach}
 	\label{fig:pipe}
 \end{figure} 
-with the intention of detecting the sentiment in sentence-level and extracting features within these sentences. {\color {red}{For splitting the reviews into sentences, the pipeline uses the NLTK Data package which is based in English punctuation marks.  From this steps results that a review has on average 5.1 sentences, where the maximum number of sentences per review found is 41 sentences. The total number of sentences in English that form the dataset is 301 081 sentences. For all of them}} tokenization and lemmatization are performed to each sentence of the review. Tokenization is used form chopping the sentences into words, phrases, symbols and emoticons, each represented as a token. Lemmatization is the process of getting the root of the words, called lemmas, while ignoring its other forms as part of the speech. For tokenization the pipeline uses the \textit{TweetTokenizer}\footnote{http://www.nltk.org/api/nltk.tokenize.html} package, part of NLTK 3.0 Package and Twitter-aware designed, in order to be able to identify emoticons and adapt to new domains. On the other hand lemmatization is performed using \textit{WordNet 3.0}\footnote{https://wordnet.princeton.edu/}, a large lexical database for English terms and also part of NLTK 3.0 package. In WordNet nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept \cite{miller1995wordnet}. The output of the pre-processing steps is a list of lemmas for each sentence, which will be used by the pipeline for the next steps as explained in the following section.  
+with the intention of detecting the sentiment in sentence-level and extracting features within these sentences. For splitting the reviews into sentences, the pipeline uses the NLTK Data package which is based in English punctuation marks.  From this steps results that a review has on average 5.1 sentences, where the maximum number of sentences per review found is 41 sentences. The total number of sentences in English that form the dataset is 301 081 sentences. For all of them tokenization and lemmatization are performed to each sentence of the review. Tokenization is used form chopping the sentences into words, phrases, symbols and emoticons, each represented as a token. Lemmatization is the process of getting the root of the words, called lemmas, while ignoring its other forms as part of the speech. For tokenization the pipeline uses the \textit{TweetTokenizer}\footnote{http://www.nltk.org/api/nltk.tokenize.html} package, part of NLTK 3.0 Package and Twitter-aware designed, in order to be able to identify emoticons and adapt to new domains. On the other hand lemmatization is performed using \textit{WordNet 3.0}\footnote{https://wordnet.princeton.edu/}, a large lexical database for English terms and also part of NLTK 3.0 package. In WordNet nouns, verbs, adjectives and adverbs are grouped into sets of cognitive synonyms (synsets), each expressing a distinct concept \cite{miller1995wordnet}. The output of the pre-processing steps is a list of lemmas for each sentence, which will be used by the pipeline for the next steps as explained in the following section.  
 %
 \section{Feature identification}
 As soon as each sentence in the corpus of reviews is represented as a list of lemmas, the ontology based approach is used to identify the accommodation features of each sentence.  The lists of related terms of the features is lemmatized in the same way as explained above, and the duplicates are removed. The lemmatization process aims to create a list of related lemmas for each feature in the ontology, which will then be used for feature identification in the sentences.
 Thus, the feature identification step is a string match of the list of lemmas for every single sentence, with the list of related lemmas of every feature in the ontology. Considering that the ontology consists of many terms, this sample pipeline is trained to identify only six features that Airbnb asks the customers to manually rate as part of their feedback, namely \textit{accuracy, cleanliness, check-in, communication, location} and \textit{value}. However, the conclusion are drawn equally as all the features of ontology are included. 
 
 When a word in the sentence is identified to be a feature, the algorithm jumps to the next word of the sentence. Within one sentence more than one feature can be identified, as well as features can be mentioned more than once. Therefore, for every possible feature match, a\textit{ match counter } variable which keeps track of the features mentioned is assigned to the sentence. Here, the pipeline considers each sentence as independent and it ignores the logical connection between two sentences of the same review.
-{\color{red}{\begin{equation}
+\begin{equation}
   Feature_i=\left\{
     \begin{array}{@{} l c @{}}
       k & \text{$feature$ mentioned k times} \\
       0 & \text{$feature$ not mentioned}
     \end{array}\right.
   \label{eq4}
-\end{equation}}}
+\end{equation}
 
 
 \section{Sentiment detection}
@@ -48,7 +48,7 @@ In each of these sentences, the pipeline is trained to identify six accommodatio
 \ref{eq3.2} shows that the sentiment score (SS) of a feature in sentence level depends on the SS of the sentence itself and the feature weights, which is the number of times the feature is mentioned in this sentence compared to the total number of features mentioned in it.
 %
 % ----------------FORMULA--------------------
-
+%
 \begin{equation}
 SS_{(sentence,feature)} = \frac{k}{n} * SS_{sentence}
 \label{eq3.2}
@@ -85,4 +85,4 @@ The last step of the pipeline and the most interesting one for service providers
     					elif (0.75 <= Sentiment): stars = 5
 \end{lstlisting}
 \normalsize
-The data  analysis in this step includes calculation and visualization of sentiment scores per reviews and listings, frequency of ontology-based features, ranking of listings based on overall sentiment or based on sentiment of one or more specific features, ranking of features for one listing based on their sentiment, identification of listings with the biggest number of reviews and identification on listings where the host have canceled once or more the reservation, computation and comparisons of sentiment scores from the pipeline with the ratings of Airbnb and so further. The analysis can of course be extended and customized to match the specific interest of the service providers or the customers. The main results of this analysis with be explored in the results section, followed by the implementation of pipeline according to its usefulness for service providers and customers respectively. 
+The data  analysis in this step includes calculation and visualization of sentiment scores per reviews and listings, frequency of features, ranking of listings based on overall sentiment or based on sentiment of one or more specific features, cancellation rates of listings, computation and comparisons of sentiment scores from the pipeline with the ratings of Airbnb and so further. The analysis can of course be extended and customized to match the specific interest of the service providers or the customers. The main results of this analysis with be explored in the results section, followed by the implementation of pipeline according to its usefulness for service providers and customers respectively. 
