@@ -11,14 +11,14 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Example of the probabilistic sentiment results}}{16}{figure.4.2}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Distribution of VADER and humans' sentiment scores}}{19}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Precision/Recall matrix for feature identification}}{21}{figure.5.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Precision/Recall matrix for feature identification}}{20}{figure.5.2}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Sentiment scores of each sentence of reviews in the dataset}}{23}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Percentage of sentences, reviews and listings where the features are mentioned}}{24}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Features mentioned in review level per each listing and their sentiment}}{25}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Comparison of combinations Airbnb and pipeline stars per listing}}{26}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Reviews of listing with (-2) stars difference}}{27}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces RMSE per feature before and after setting the condition}}{28}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces RMSE per feature before and after setting the condition}}{29}{figure.6.7}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Sentiment scores of each sentence of reviews in the dataset}}{22}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Percentage of sentences, reviews and listings where the features are mentioned}}{23}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Features mentioned in review level per each listing and their sentiment}}{24}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Comparison of combinations Airbnb and pipeline stars per listing}}{25}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Reviews of listing with (-2) stars difference}}{26}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces RMSE per feature before and after setting the condition}}{27}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces RMSE per feature before and after setting the condition}}{28}{figure.6.7}
 \addvspace {10pt}
 \addvspace {10pt}

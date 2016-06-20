@@ -1,7 +1,7 @@
 \select@language {english}
 \contentsline {chapter}{Abstract}{iii}{chapter*.3}
 \par \penalty \@M \unhbox \voidb@x \hbox {}\hfill {\nag@@warning@vi \bfseries Page}\par \penalty \@M 
-\contentsline {chapter}{List of Figures}{vi}{section*.4}
+\contentsline {chapter}{List of Figures}{v}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Problem statement}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Research question}{3}{section.1.2}
@@ -18,19 +18,19 @@
 \contentsline {section}{\numberline {4.4}Data analysis}{16}{section.4.4}
 \contentsline {chapter}{\chapternumberline {5}Evaluation}{18}{chapter.5}
 \contentsline {section}{\numberline {5.1}Evaluation of VADER algorithm}{18}{section.5.1}
-\contentsline {section}{\numberline {5.2}Evaluation of feature identification}{20}{section.5.2}
-\contentsline {chapter}{\chapternumberline {6}Results}{22}{chapter.6}
-\contentsline {section}{\numberline {6.1}Overview of sentiment scores}{22}{section.6.1}
-\contentsline {section}{\numberline {6.2}The case of sentences with "no sentiment"}{23}{section.6.2}
+\contentsline {section}{\numberline {5.2}Evaluation of feature identification}{19}{section.5.2}
+\contentsline {chapter}{\chapternumberline {6}Results}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview of sentiment scores}{21}{section.6.1}
+\contentsline {section}{\numberline {6.2}The case of sentences with "no sentiment"}{22}{section.6.2}
 \contentsline {section}{\numberline {6.3}Most mentioned features}{23}{section.6.3}
-\contentsline {section}{\numberline {6.4}The trade-off between sentiment and number of reviews}{24}{section.6.4}
-\contentsline {section}{\numberline {6.5}Pipeline results compared to Airbnb stars}{26}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Overall stars per listing}{26}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Stars of features per listing}{27}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Conditional analysis on the number of reviews}{28}{section.6.6}
-\contentsline {section}{\numberline {6.7}Reducing the bias of Airbnb system}{29}{section.6.7}
-\contentsline {chapter}{\chapternumberline {7}Discussion}{30}{chapter.7}
-\contentsline {section}{\numberline {7.1}Major findings}{30}{section.7.1}
-\contentsline {section}{\numberline {7.2}Practical implications}{31}{section.7.2}
-\contentsline {section}{\numberline {7.3}Limitations and future research}{31}{section.7.3}
-\contentsline {chapter}{Appendix A}{33}{appendix*.5}
+\contentsline {section}{\numberline {6.4}The trade-off between sentiment and number of reviews}{23}{section.6.4}
+\contentsline {section}{\numberline {6.5}Pipeline results compared to Airbnb stars}{25}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Overall stars per listing}{25}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Stars of features per listing}{26}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Conditional analysis on the number of reviews}{27}{section.6.6}
+\contentsline {section}{\numberline {6.7}Reducing the bias of Airbnb system}{28}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Discussion}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1}Major findings}{29}{section.7.1}
+\contentsline {section}{\numberline {7.2}Practical implications}{30}{section.7.2}
+\contentsline {section}{\numberline {7.3}Limitations and future research}{30}{section.7.3}
+\contentsline {chapter}{Appendix A}{32}{appendix*.5}
