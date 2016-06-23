@@ -22,7 +22,7 @@
 \BOOKMARK [1][-]{section.6.2}{The case of sentences with "no sentiment"}{chapter.6}% 22
 \BOOKMARK [1][-]{section.6.3}{Most mentioned features}{chapter.6}% 23
 \BOOKMARK [1][-]{section.6.4}{The trade-off between sentiment and number of reviews}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.5}{Pipeline results compared to Airbnb stars}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.5}{Pipeline ratings compared to Airbnb stars}{chapter.6}% 25
 \BOOKMARK [2][-]{subsection.6.5.1}{Overall stars per listing}{section.6.5}% 26
 \BOOKMARK [2][-]{subsection.6.5.2}{Stars of features per listing}{section.6.5}% 27
 \BOOKMARK [1][-]{section.6.6}{Conditional analysis on the number of reviews}{chapter.6}% 28
