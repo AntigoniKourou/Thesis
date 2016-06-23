@@ -6,8 +6,11 @@
 %
 % Adding metadata:
 \usepackage{datetime}
+
 \usepackage{listings}
 \usepackage{ifpdf}
+\usepackage{titlesec}% http://ctan.org/pkg/titlesec
+\usepackage{pdfpages}
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{wrapfig}
@@ -35,16 +38,16 @@
 \setlength{\trimtop}{0pt} 
 \setlength{\trimedge}{\stockwidth} 
 \addtolength{\trimedge}{-\paperwidth} 
-\settypeblocksize{634pt}{448.13pt}{*} 
-\setulmargins{4cm}{*}{*} 
+\settypeblocksize{634pt}{510pt}{*} 
+\setulmargins{3cm}{*}{*} 
 \setlrmargins{*}{*}{1.5} 
-\setmarginnotes{17pt}{51pt}{\onelineskip} 
-\setheadfoot{\onelineskip}{2\onelineskip} 
-\setheaderspaces{*}{2\onelineskip}{*} 
+\setmarginnotes{17pt}{17pt}{\onelineskip} 
+\setheadfoot{\onelineskip}{1\onelineskip} 
+\setheaderspaces{*}{1\onelineskip}{*} 
 \checkandfixthelayout
 %
 \frenchspacing
-% Font with math support: New Century Schoolbook
+% Font with math support: New Century Schoolbookhttps://preview.overleaf.com/public/qhgnwtzktrfb/images/ceccb95df617d818d25f321f2587622ae2717d92.jpeg
 \usepackage{fouriernc}
 \usepackage[T1]{fontenc}
 %
@@ -80,16 +83,29 @@
 			{!}{\scshape\so\@chapapp}}\quad%
 		\raisebox{\depthof{\usebox{\feline@chapter}}}{\usebox{\feline@chapter}}%
 } 
-\newcommand\feline@chm[1][4cm]{%
+\newcommand\feline@chm[1][0cm]{%
 	\sbox\feline@chapter{\feline@chapter@marker[#1]}% 
 	\makebox[0pt][c]{% aka \rlap
 		\makebox[1cm][r]{\usebox\feline@chapter}%
 	}}
+    
+  \renewcommand\afterchapternum{%
+\par\nobreak\vskip0pt}
+
+\setlength\midchapskip{1pt}
+
+\renewcommand\afterchaptertitle{%
+\par\vskip2\midchapskip%
+\rule\textwidth\normalrulethickness
+\felinenonumfalse
+\nobreak\vskip\afterchapskip%
+}
+
 \makechapterstyle{daleifmodif}{
 	\renewcommand\chapnamefont{\normalfont\Large\scshape\raggedleft\so} 
 	\renewcommand\chaptitlefont{\normalfont\Large\bfseries\scshape} 
 	\renewcommand\chapternamenum{} \renewcommand\printchaptername{} 
-	\renewcommand\printchapternum{\null\hfill\feline@chm[3.5cm]\par} 
+	\renewcommand\printchapternum{\null\hfill\feline@chm[4cm]\par} 
 	\renewcommand\printchaptertitle[1]{\color{gray}\chaptitlefont\raggedleft ##1\par}
 } 
 \makeatother 
@@ -141,6 +157,7 @@
 \usepackage{newlfont}					%Helpful package for fonts and symbols
 \usepackage{layouts}					%Layout diagrams
 \usepackage{graphicx}					%Calls figure environment
+	
 \usepackage{longtable,rotating}			%Long tab environments including rotation. 
 \usepackage[applemac]{inputenc}			%Needed to encode non-english characters 
 									%directly for mac
@@ -322,10 +339,6 @@
 \clearemptydoublepage
 \let\cleardoublepage\clearpage
 %
-\let\cleardoublepage\clearpage
-\include{frontmatter/dedication}
-\clearemptydoublepage
-
 %
 \include{frontmatter/declaration}
 \clearemptydoublepage
@@ -381,9 +394,11 @@
 \clearemptydoublepage
 
 % And the appendix goes here
-\appendix
+
 \import{chapters/appendices/}{app0A.tex}
-\clearemptydoublepage
+\import{chapters/appendices/}{Appendix_II.tex}
+\import{chapters/appendices/}{app03.tex}
+\import{chapters/appendices/}{app04.tex}
 %
 % Add index
 %\printindex
