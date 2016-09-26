@@ -1,7 +1,7 @@
 from py2neo import Graph
 import csv
 
-graph = Graph("http://neo4j:nA>R67;od0ex82X6(<x9C]1|f4SYuM:l@10.8.0.1:7474/db/data")
+graph = Graph("http://user:pass@server:port/db/data")
 
 #Make sure we've connected properly
 assert graph.neo4j_version == (2, 3, 2)
